@@ -13,6 +13,9 @@ Ans- https://stackoverflow.com/questions/25441088/how-can-i-count-occurrences-wi
 Why LinkedHashMap?
 Ans- It maintains the order of insertion.
 
+Why Function.Identity() ?
+Ans - https://stackoverflow.com/questions/28032827/java-8-lambdas-function-identity-or-t-t/28041480
+
 After this i need to convert LinkedHashMap to stream of values and filter the records with count 1.
 
 map(entry -> entry.getKey()) ?
