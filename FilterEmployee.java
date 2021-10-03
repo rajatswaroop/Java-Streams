@@ -3,6 +3,10 @@
 Using Stream convert the Employee list of object into List<Id> with salary>20000 and sort in ascending order?
 
 */
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class FilterEmployee {
 
