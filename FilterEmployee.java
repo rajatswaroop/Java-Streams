@@ -19,7 +19,7 @@ public class FilterEmployee {
 
         List<Integer> idList = employeeList.stream()
                                            .filter(e -> e.getSalary() > 20000)
-                                           .sorted()
+                                           .sorted(Comparator.comparing(Employee::getName))
                                            .map(e -> e.id)
                                            .collect(Collectors.toList());
         
@@ -54,8 +54,3 @@ public class FilterEmployee {
      }
  }
 
-
-/*
-Exception in thread "main" java.lang.ClassCastException: com.modmed.mips.biz.impl.Employee cannot be cast to java.lang.Comparable
-
-*/
