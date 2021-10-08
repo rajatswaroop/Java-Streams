@@ -11,6 +11,7 @@ public class EvenSumUsingStreams {
     {
         List<Integer> list = Arrays.asList(2,4,7,8,9,6,3);
         int value= list.stream().filter(i -> i%2==0).mapToInt(i -> i.intValue()).sum();
+        //Here it can be also done using .collect(Collectors.summingInt(Integer::intValue));
         System.out.println(value);
     }
 }
